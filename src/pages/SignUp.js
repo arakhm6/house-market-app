@@ -53,7 +53,9 @@ function SignUp() {
       await setDoc(doc(db, 'users', user.uid), formDataCopy)
 
       navigate('/')
-    } catch (error) {}
+    } catch (error) {
+      console.log(error)
+    }
   }
 
   return (
