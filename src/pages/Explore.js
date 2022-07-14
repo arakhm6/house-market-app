@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
+import Slider from '../components/Slider'
 import rentCategoryImage from '../assets/jpg/rentCategoryImage.jpg'
 import sellCategoryImage from '../assets/jpg/sellCategoryImage.jpg'
+import { Slide } from 'react-toastify'
 
 function Explore() {
   return (
@@ -9,7 +11,9 @@ function Explore() {
         <p className='pageHeader'>Explore</p>
       </header>
 
-      <main>{/* Slider */}</main>
+      <main>
+        <Slider />
+      </main>
 
       <p className='exploreCategoryHeading'>Categories</p>
       <div className='exploreCategories'>
